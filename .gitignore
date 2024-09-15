@@ -129,11 +129,6 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# media files
-*.mp4
-*.jpg
-*.png
-
 # dotenv environment variables file
 .env
 
