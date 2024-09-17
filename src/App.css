@@ -3,7 +3,7 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0; /* Light background for a clean look */
+  background-color: #f6f6f6; /* Light background for a clean look */
   color: #333;
 }
 
@@ -24,53 +24,61 @@ h1 {
   color: #03bdf6;
   letter-spacing: 2px;
   text-shadow: 
-    -2px -2px 0 #000, /* Top-left */
-    2px -2px 0 #000,  /* Top-right */
-    -2px 2px 0 #000,  /* Bottom-left */
-    2px 2px 0 #000;   /* Bottom-right */
+  -2px -2px 0 #000, /* Top-left */
+  2px -2px 0 #000,  /* Top-right */
+  -2px 2px 0 #000,  /* Bottom-left */
+  2px 2px 0 #000;   /* Bottom-right */
 }
 
-header p {
+header h2 {
   color: #ff0;
   font-size: 1.2rem;
 }
 
-/* Gallery Section */
-section {
-  padding: 2rem;
+/* Main Area and Titles */
+.main {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-h2 {
+h3 {
   color: #03bdf6;
   font-size: 2rem;
   text-align: center;
+  margin-top: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
-/* Gallery Images */
+/* Services Section */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.services > div {
+  width: 40%;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: .2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+
+h4 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
 section div img {
-  width: 45%;
+  width: 80%;
   height: auto;
-  margin: 0 2%;
+  margin: 0 10%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section div {
-  display: flex;
-  justify-content: center;
-}
-
-/* Services Section */
-ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-}
-
-ul li {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
 }
 
 /* Contact Form Section */
@@ -79,7 +87,7 @@ form {
   flex-direction: column;
   width: 100%;
   max-width: 600px;
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 1rem;
   background-color: #fff;
   border-radius: 10px;
@@ -87,31 +95,47 @@ form {
 }
 
 label {
-  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 2.5%;
+  margin-bottom: 1.5rem;
   font-weight: bold;
+  font-size: 1rem;
+  color: #333;
 }
 
 input, textarea {
+  width: 100%;
   padding: 0.8rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem; /* Space between label and input */
   border: 2px solid #03bdf6;
   border-radius: 5px;
   font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+textarea {
+  resize: vertical; /* Allows vertical resizing for the textarea */
+  min-height: 150px;
 }
 
 button {
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1.5rem;
   background-color: #03bdf6;
   color: #fff;
   border: none;
   border-radius: 5px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0293c4;
+  background-color: #028bbd;
 }
+
+
 
 /* Footer Section */
 footer {
