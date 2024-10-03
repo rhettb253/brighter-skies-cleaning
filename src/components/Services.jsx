@@ -1,20 +1,22 @@
-// import React from 'react';
+import {useState} from 'react';
+import CleaningOrHandy from './CleaningOrHandy';
+import Cleaning from './Cleaning';
 
 const Services = () => {
+  const [renderedComponent, setRenderedComponent] = useState("CleaningOrHandy");
+
   return (
     <section>
-      <h2>Our Services</h2>
+      <h3>Our Services</h3>
       <p>
         We offer comprehensive residential and commercial cleaning services in Walla Walla. Our team
         provides deep cleaning, regular maintenance, and customized services to meet your specific
         needs.
       </p>
-      <ul>
-        <li>Residential Cleaning</li>
-        <li>Commercial Cleaning</li>
-        <li>Real Estate Cleaning</li>
-        <li>Move-In/Move-Out Cleaning</li>
-      </ul>
+      <div className='services'>
+        <CleaningOrHandy />
+        
+      </div>
     </section>
   );
 };
