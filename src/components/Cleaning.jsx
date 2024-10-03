@@ -6,6 +6,9 @@ import ResidentialClean1 from '../assets/residentialclean_one.jpg';
 function Cleaning() {
   return (
     <>
+        <p>
+            Our team provides deep cleaning, regular maintenance, and customized services to meet your specific needs.
+        </p>
         <div>
           <h4>Residential Cleaning</h4>
           <img src={ResidentialClean1} alt="Residential Cleaning" />
