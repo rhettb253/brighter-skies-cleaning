@@ -64,7 +64,7 @@ const ContactForm = () => {
           Message:
           <textarea name="message" value={formData.message} onChange={handleChange} required />
         </label>
-        {loading ? 'loading...' : <button type="submit">Send</button>}
+        {loading ? 'loading...' : <button className='formButton' type="submit">Send</button>}
       </form>
     </>
   );
