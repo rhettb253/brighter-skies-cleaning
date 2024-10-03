@@ -9,11 +9,10 @@ body {
 
 /* Header Section */
 header {
-  background-image: url('https://images.pexels.com/photos/27307154/pexels-photo-27307154/free-photo-of-te-waikoropupu-springs.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  background-size: cover;
-  background-position: 50% 15%;
-  background-repeat: no-repeat;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #4BCCFA;
+  text-align: left;
   padding: 2rem;
   border-bottom: 2px solid #03bdf6;
 }
@@ -30,9 +29,14 @@ h1 {
   2px 2px 0 #000;   /* Bottom-right */
 }
 
-header h2 {
+h2 {
   color: #ff0;
   font-size: 1.2rem;
+}
+
+header img {
+  width: 10%;
+  padding-right: 2rem;
 }
 
 /* Main Area and Titles */

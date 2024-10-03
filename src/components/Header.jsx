@@ -1,8 +1,13 @@
+import sunLogo from '../assets/sunLogo.png';
+
 function Header() {
   return (
     <header>
-        <h1>Brighter Skies Cleaning</h1>
+      <img src={sunLogo} alt="sun icon"/>
+      <div>
+        <h1>Brighter Skies Cleaning & Handy</h1>
         <h2>Serving Walla Walla, WA with Residential and Commercial Cleaning</h2>
+      </div>
     </header>
   )
 }
