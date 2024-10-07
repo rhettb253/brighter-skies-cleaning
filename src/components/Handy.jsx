@@ -18,31 +18,31 @@ function Handy({ updateComponentToRender }) {
         </div>
         <div className='option'>
           <h5>Restoration</h5>
-          <img src={ResidentialClean1} alt="Residential Cleaning" />
+          <img src={ResidentialClean1} alt="Restoration" />
         </div>
         <div className='option'>
           <h5>Window Replacement</h5>
-          <img src={CommClean1} alt="Commercial Cleaning" />
+          <img src={CommClean1} alt="Window Replacement" />
         </div>
         <div className='option'>
           <h5>Vinyl Plank Flooring</h5>
-          <img src={MoveClean1} alt="Move in/out Cleaning" />
+          <img src={MoveClean1} alt="Vinyl Plank Flooring" />
         </div>
         <div className='option'>
           <h5>Trim Install/Replacement</h5>
-          <img src={REClean1} alt="Real Estate Detailing" />
+          <img src={REClean1} alt="Trim Install/Replacement" />
         </div>
         <div className='option'>
           <h5>Fence Building</h5>
-          <img src={CommClean1} alt="Pressure Washing" />
+          <img src={CommClean1} alt="Fence Building" />
         </div>
         <div className='option'>
           <h5>Deck Building</h5>
-          <img src={CommClean1} alt="Pressure Washing" />
+          <img src={CommClean1} alt="Deck Building" />
         </div>
         <div className='option'>
           <h5>Hardscapes</h5>
-          <img src={CommClean1} alt="Pressure Washing" />
+          <img src={CommClean1} alt="Hardscapes" />
         </div>
     </>
   )
