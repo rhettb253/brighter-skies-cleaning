@@ -5,13 +5,13 @@ import handy from '../assets/handy.jpg';
 function CleaningOrHandy({ updateComponentToRender }) {
   return (
     <>
-        <div className='cleaningButton' onClick={() => updateComponentToRender('cleaning')}>
-          <h4>Cleaning Services</h4>
+        <div className='option' onClick={() => updateComponentToRender('cleaning')}>
+          <h5>Cleaning Services</h5>
           <img src={cleaning} alt="Cleaning" />
         </div>
-        <div className='handyButton'>
-          <h4>Handy Work</h4>
-          <img src={handy} alt="Handy" />
+        <div className='option'>
+          <h5>Handy Work</h5>
+          <img src={handy} alt="Handy" onClick={() => updateComponentToRender('handy')}/>
         </div>
     </>
   )

@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import CleaningOrHandy from './CleaningOrHandy';
 import Cleaning from './Cleaning';
+import Handy from './Handy';
 
 const Services = () => {
   const [renderedComponent, setRenderedComponent] = useState("cleaningOrHandy");
@@ -20,7 +21,7 @@ const Services = () => {
       <div className='services'>
         {renderedComponent === "cleaningOrHandy" && <CleaningOrHandy updateComponentToRender={updateComponentToRender} />}
         {renderedComponent === "cleaning" && <Cleaning updateComponentToRender={updateComponentToRender} />}
-        
+        {renderedComponent === "handy" && <Handy updateComponentToRender={updateComponentToRender} />}
       </div>
     </section>
   );
