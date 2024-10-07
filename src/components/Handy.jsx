@@ -5,7 +5,7 @@ import CommClean1 from '../assets/commercialclean_one.jpg';
 import ResidentialClean1 from '../assets/residentialclean_one.jpg';
 import backIcon from '../assets/back.png';
 
-function Cleaning({ updateComponentToRender }) {
+function Handy({ updateComponentToRender }) {
   return (
     <>
     
@@ -14,26 +14,34 @@ function Cleaning({ updateComponentToRender }) {
         </p>
         <div className='backButtonAndServiceTitle'>
             <img className='backButton' src={backIcon} alt="back icon" onClick={() => updateComponentToRender('cleaningOrHandy')}/>
-            <h4>Cleaning</h4>
+            <h4>Handy Work</h4>
         </div>
         <div className='option'>
-          <h5>Residential Cleaning</h5>
+          <h5>Restoration</h5>
           <img src={ResidentialClean1} alt="Residential Cleaning" />
         </div>
         <div className='option'>
-          <h5>Commercial Cleaning</h5>
+          <h5>Window Replacement</h5>
           <img src={CommClean1} alt="Commercial Cleaning" />
         </div>
         <div className='option'>
-          <h5>Move-In/Move-Out Cleaning</h5>
+          <h5>Vinyl Plank Flooring</h5>
           <img src={MoveClean1} alt="Move in/out Cleaning" />
         </div>
         <div className='option'>
-          <h5>Real Estate Detailing</h5>
+          <h5>Trim Install/Replacement</h5>
           <img src={REClean1} alt="Real Estate Detailing" />
         </div>
         <div className='option'>
-          <h5>Pressure Washing</h5>
+          <h5>Fence Building</h5>
+          <img src={CommClean1} alt="Pressure Washing" />
+        </div>
+        <div className='option'>
+          <h5>Deck Building</h5>
+          <img src={CommClean1} alt="Pressure Washing" />
+        </div>
+        <div className='option'>
+          <h5>Hardscapes</h5>
           <img src={CommClean1} alt="Pressure Washing" />
         </div>
     </>
@@ -41,8 +49,8 @@ function Cleaning({ updateComponentToRender }) {
 }
 
 // Declare react prop to avoid linter error
-Cleaning.propTypes = {
+Handy.propTypes = {
     updateComponentToRender: PropTypes.func.isRequired,  // Ensures it's a function and is required
 };
 
-export default Cleaning
+export default Handy
