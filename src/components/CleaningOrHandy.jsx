@@ -9,9 +9,9 @@ function CleaningOrHandy({ updateComponentToRender }) {
           <h5>Cleaning Services</h5>
           <img src={cleaning} alt="Cleaning" />
         </div>
-        <div className='option'>
+        <div className='option' onClick={() => updateComponentToRender('handy')}>
           <h5>Handy Work</h5>
-          <img src={handy} alt="Handy" onClick={() => updateComponentToRender('handy')}/>
+          <img src={handy} alt="Handy" />
         </div>
     </>
   )
